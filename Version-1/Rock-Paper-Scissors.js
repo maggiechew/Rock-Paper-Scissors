@@ -1,12 +1,15 @@
-    
 let choices = ["rock", "paper", "scissors"];
 
-let userInput = prompt('Choose your weapon! Rock, paper or scissors')
- userInput = userInput.toLowerCase().replace(/[|&;$%@"<>()+,]/g, "")
+let userInput = prompt(
+  "Choose your weapon! Rock, paper or scissors"
+);
+userInput = userInput.toLowerCase().replace(/[|&;$%@"<>()+,]/g, "");
 
 while (!choices.some((element) => element == userInput)) {
-    userInput = window.prompt(`${userInput} doesn't count! Please choose either rock, paper or scissors`)
-    // console.log('WRONG')
+  userInput = prompt(
+    `${userInput} doesn't count! Please choose either rock, paper or scissors`
+  );
+  // console.log('WRONG')
 }
 
 // let userInput = "rock";
@@ -58,18 +61,18 @@ switch (userInput) {
 }
 
 // console.log('The computer chose... ' + computerChoice)
-alert('The computer chose... ' + computerChoice)
+console.log("The computer chose... " + computerChoice);
 
 switch (outcome) {
-    case "Computer wins":
-      alert("The computer wins! Tough luck, champ!")
-      break;
-    case "User wins":
-      alert("You won! Great job, kiddo!")
-      break;
-    case "Tie! Go again":
-        alert("A tie! Not bad... game respect game...")
-      break;
-  }
+  case "Computer wins":
+    prompt("The computer wins! Tough luck, champ!");
+    break;
+  case "User wins":
+    prompt("You won! Great job, kiddo!");
+    break;
+  case "Tie! Go again":
+    prompt("A tie! Not bad... game respect game...");
+    break;
+}
 
 // user wins with paper: https://dribbble.com/shots/5060019-Street-Fight-Rock-Paper-Scissors
