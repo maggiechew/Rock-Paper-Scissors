@@ -6,7 +6,6 @@
   "description": "Version One: in the browser, uses prompt/ alert to get user input and alert user to outcome of game.",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
